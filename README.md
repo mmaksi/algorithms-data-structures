@@ -37,7 +37,6 @@ Algorithms are functions and methods that use data structures to write programs.
    As the number of inputs increases, the number of operations increases quadratically.
 
 - Adding a loop for every element.
-  ![big-o-factorial-time-chart]()
 
 ### Big O Rules:
 

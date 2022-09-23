@@ -73,6 +73,7 @@ When we talk about `Space Complexity` we talk about additional space, so we don'
 
 - Being the best coder doesn't mean you're going to ace the technical interview.
 - Companies look for people with analytical skills, coding skills, technical skills and communication skills.
+- Check out the ![Big O cheat sheet](https://drive.google.com/file/d/1p_TSyks3Lz-dCIfu2DkNY6zTgM2wGpaT/view?usp=sharing)
 
 ## 3. Data Structures Introduction
 

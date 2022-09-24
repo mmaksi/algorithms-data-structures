@@ -85,10 +85,10 @@ When we talk about `Space Complexity` we talk about additional space, so we don'
 ### How Computers Store Data?
 
 - Variables are stored in RAM.
-- RAMs are devided into `addresses` and each address has 1 byte of 8 bits.
+- RAMs are devided into `addresses` and each address has 1 byte (8 bits).
 - The CPU uses the Memory Controller to read/write on the RAM.
 - The CPU Cache holds data that are very very recent.
-- Integers are usually represented in 32 bits (4 addresses/lines in RAM)
+- Integers are usually represented in 32 bits (4 addresses = 4 bytes/lines in RAM).
 - JavaScript `Infinity` is when we are unable to store the number in RAM.
 - Data Structures are arrangement of data in RAM. How data is arranged in RAM has pros and cons on read/write. Selecting the best data structure means making the CPU perform operations as fast as possible.
 
@@ -108,4 +108,35 @@ Insertion, Deletion, Traversal, Searching, Sorting, Access,
 - Dynamic arrays allow to copy and rebuild an array in a new location which means more memory
 - JavaScript arrays are dynamicc - they automatically allocate memory according to increase in size. They expand as you add more items.
 
-### Implementing an Array
+## 5. Hash Tables
+### Hash Tables Introduction
+Hash Tables store `key-value` pairs where keys are passed to a hash function which in turn decides where in memory to store this pair based on its output.
+
+### Hash Function
+- Hash Function = a function that generates a value of fixed length of each input.
+- Hash Functions are one-way functions.
+- Small change in the input makes huge change in the output.
+- Hash Functions are **idempotent**: they generate the same output for the same input.
+- Every time you _add_ or _retrieve_ data from memory, the hash function will run
+
+### Hash Collisions
+**O(1) Operations:** <br />
+insert, lookup, delete, search <br />
+<br />
+When data is hashed there is a chance that it will be stored in the same memory space of another data, causing a collision. There are many ways to resolve a collision, one way is Linked Lists data structure.<br />
+When there is a collison occurs, the big O becomes O(n)
+
+- In JS the keys are strengified.
+- JS `Map` allows you to store and data type as keys. It also maintains insertion order.
+- JS `Set` store only keys.
+
+### Arrays vs Hash Tables
+**Arrays** <br />
+Search `O(n)` because we have to loop over all items.
+Insert, delete `O(n)` because it might shift indexes.
+Lookup, push `O(1)` because we know where the index is in memory.
+
+### HashTables Pros & Cons
+**Pros:** Fast lookup (Good collision resolution needed), fast inserts, flexible keys.
+**Cons:** Unordered, Slow key iteration.
+- Hash Tables can improve Time Complexity of nested loops but increases Space Complexity.

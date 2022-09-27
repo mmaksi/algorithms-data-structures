@@ -102,11 +102,14 @@ Insertion, Deletion, Traversal, Searching, Sorting, Access,
 - Lookup, push, pop have `O(1)` because the computer knows where data are stored in RAM (sequentially)
 - Unshift, splice have `O(n)` because it contains iterations over its items to re-order them.
 
-### Static Arrays:
+### Static Arrays vs. Dynamic Arrays:
 
-- Fixed in size
-- Dynamic arrays allow to copy and rebuild an array in a new location which means more memory
-- JavaScript arrays are dynamicc - they automatically allocate memory according to increase in size. They expand as you add more items.
+- Fixed in size. If you want to expand on their size, you need to copy and rebuild an array in a new location => double memory + time complexity `O(n)`.
+- Dynamic arrays allow adding items without copying (most of the time) => `O(1)`.
+- JavaScript arrays are dynamicc - they automatically allocate memory according to increase in size. They expand as you add more items. But rarely do they act like static arrays. So the `push` command can be either `O(n)` or `O(1)`.
+
+### Note
+Treat strings as arrays because a string is an array of characters.
 
 ## 5. Hash Tables
 ### Hash Tables Introduction
@@ -140,3 +143,19 @@ Lookup, push `O(1)` because we know where the index is in memory.
 **Pros:** Fast lookup (Good collision resolution needed), fast inserts, flexible keys.
 **Cons:** Unordered, Slow key iteration.
 - Hash Tables can improve Time Complexity of nested loops but increases Space Complexity.
+
+## 6. Linked Lists
+- Linked Lists have two types: singly and doubly.
+- Singly linked lists as shown below consist of nodes, where each node has two parts: one that holds the value to store and the other is a pointer to the value of the next node.
+- Singly Linked Lists are null-terminated.
+- The first node is called the **head** while the last node is called the **tail**.
+![linked-lists-diagram]()
+- Traversing is iterating over an iterable but we use that term because we don't know when we will hit `null`.
+- Traversing over a Linked List is slower than iterating an array because Array elements are stored sequentially in memory while in Linked Lists they are scattered even though both operations are `O(n)`.
+- Inserting and deleting in Linked Lists and Hash Tables are better than in Arrays.
+- Linked Lists have order while Hash Tables don't.
+
+### What is a Pointer?
+A pointer is a reference in another place in memory. <br/>
+Objects in JS are pointers to a memory space. Once we delete the object using the `delete` keyword, JS will automatically remove the memory that was allocated to that object. That's why it's called a _garbage collecting language_.
+

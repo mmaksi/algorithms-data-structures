@@ -1,6 +1,7 @@
 # Algorithms and Data Structures
 
 Algorithms are functions and methods that use data structures to write programs.
+![algoexpert-certificate](https://i.ibb.co/4WKW42m/mark-maksi-algoexpert.png)
 
 ## 1. Big O Asymptotic Analysis
 
@@ -149,7 +150,7 @@ Lookup, push `O(1)` because we know where the index is in memory.
 - Singly linked lists as shown below consist of nodes, where each node has two parts: one that holds the value to store and the other is a pointer to the value of the next node.
 - Singly Linked Lists are null-terminated.
 - The first node is called the **head** while the last node is called the **tail**.
-![linked-lists-diagram]()
+![linked-lists](https://i.ibb.co/CMN2cHg/linked-lists-big-o.png)
 - Traversing is iterating over an iterable but we use that term because we don't know when we will hit `null`.
 - Traversing over a Linked List is slower than iterating an array because Array elements are stored sequentially in memory while in Linked Lists they are scattered even though both operations are `O(n)`.
 - Inserting and deleting in Linked Lists and Hash Tables are better than in Arrays.
@@ -159,13 +160,15 @@ Lookup, push `O(1)` because we know where the index is in memory.
 A pointer is a reference in another place in memory. <br/>
 Objects in JS are pointers to a memory space. Once we delete the object using the `delete` keyword, JS will automatically remove the memory that was allocated to that object. That's why it's called a _garbage collecting language_.
 
-## Stacks and Queues
+## 7. Stacks and Queues
 **Stacks** allow insert and remove operations and follow the _last in, first out_ principle (LIFO). <br />
 **Queues** allow insert and remove operations and follow the _first in, first out_ principle (FIFO). <br />
 Stacks and queues are linear data structures with ordered items, allowing us to traverse the data sequentially one by one, in which only one data element can be reached at a time. <br />
 Stacks and Queues are higher-level data structures built on lower -level data structures, like arrays and linked lists, with limited methods. <br/>
 Examples of stacks: JavaScript engine, browser history, undo/redo operations.<br/>
 Examples of stacks: Uber, printer, restaurant.<br/>
+
+![stacks](https://i.ibb.co/YZW9z7M/stacks.png)
 
 - Stacks are dynamic arrays. => Lookup operations are `O(n) T`, `O(1) S`.
 - Inserting elements in Stacks (push operations) is `O(1) ST`.
@@ -176,3 +179,28 @@ Examples of stacks: Uber, printer, restaurant.<br/>
 - Inserting elements in queues (enqueue operation) is `O(1) ST` because we are replacing the head.
 - Removing elements from queues (dequeue operation) is `O(1) ST` because we are replacing the tail.
 - Peek operations, viewing the last item is `O(1) ST`. <br />
+
+## 9. Graphs
+- Each item is called Node or Vertex.
+- Nodes are connected through edges.
+- Linked Lists are types of Trees, and Trees anre types of Graphs.
+- Graphs are good in complex relationships but they're hard to scale. 
+<br />
+
+**Directed Graphs:** data flows in one way.
+**Undirected Graphs:** data flows in both ways.
+<br />
+
+**Weighted Graphs:** have numerical values attached to their edges. Weighted Graphs are used when deciding the fastest path from one node to another.
+**Unweighted Graphs:** have values attached only to their nodes.
+<br />
+
+**Cyclic Graphs:** common in weighted graphs.
+**Acyclic Graphs**
+
+![partial-map-of-the-internet]()
+
+To implement a graph there are 3 ways: <br />
+1. Edge List: shows only connections between all the nodes.
+2. Adjacent List: the `index` is the node's value. The `value` is the neighbors value.
+3. Adjacent Matrix

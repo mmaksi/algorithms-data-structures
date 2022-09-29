@@ -159,3 +159,20 @@ Lookup, push `O(1)` because we know where the index is in memory.
 A pointer is a reference in another place in memory. <br/>
 Objects in JS are pointers to a memory space. Once we delete the object using the `delete` keyword, JS will automatically remove the memory that was allocated to that object. That's why it's called a _garbage collecting language_.
 
+## Stacks and Queues
+**Stacks** allow insert and remove operations and follow the _last in, first out_ principle (LIFO). <br />
+**Queues** allow insert and remove operations and follow the _first in, first out_ principle (FIFO). <br />
+Stacks and queues are linear data structures with ordered items, allowing us to traverse the data sequentially one by one, in which only one data element can be reached at a time. <br />
+Stacks and Queues are higher-level data structures built on lower -level data structures, like arrays and linked lists, with limited methods. <br/>
+Examples of stacks: JavaScript engine, browser history, undo/redo operations.<br/>
+Examples of stacks: Uber, printer, restaurant.<br/>
+
+- Stacks are dynamic arrays. => Lookup operations are `O(n) T`, `O(1) S`.
+- Inserting elements in Stacks (push operations) is `O(1) ST`.
+- Removing elements from Stacks (pop operations) is `O(1) ST`.
+- Peek operations, viewing the last item is `O(1) ST`. <br />
+
+- Queues are represented as linked lists.
+- Inserting elements in queues (enqueue operation) is `O(1) ST` because we are replacing the head.
+- Removing elements from queues (dequeue operation) is `O(1) ST` because we are replacing the tail.
+- Peek operations, viewing the last item is `O(1) ST`. <br />

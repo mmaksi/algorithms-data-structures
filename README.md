@@ -1,7 +1,5 @@
 # Algorithms and Data Structures
-
-Algorithms are functions and methods that use data structures to write programs.
-![algoexpert-certificate](https://i.ibb.co/4WKW42m/mark-maksi-algoexpert.png)
+![algoexpert-certificate](https://i.ibb.co/m5zffGZ/mark-maksi-algoexpert.png)
 
 ## 1. Big O Asymptotic Analysis
 

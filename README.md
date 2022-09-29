@@ -72,7 +72,7 @@ When we talk about `Space Complexity` we talk about additional space, so we don'
 
 - Being the best coder doesn't mean you're going to ace the technical interview.
 - Companies look for people with analytical skills, coding skills, technical skills and communication skills.
-- Check out the ![Big O cheat sheet](https://drive.google.com/file/d/1p_TSyks3Lz-dCIfu2DkNY6zTgM2wGpaT/view?usp=sharing)
+- Check out the [Big O Cheat Sheet](https://drive.google.com/file/d/1p_TSyks3Lz-dCIfu2DkNY6zTgM2wGpaT/view?usp=sharing)
 
 ## 3. Data Structures Introduction
 
@@ -195,8 +195,6 @@ Examples of stacks: Uber, printer, restaurant.<br/>
 
 **Cyclic Graphs:** common in weighted graphs.
 **Acyclic Graphs**
-
-![partial-map-of-the-internet]()
 
 To implement a graph there are 3 ways: <br />
 1. Edge List: shows only connections between all the nodes.

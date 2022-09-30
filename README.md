@@ -178,6 +178,27 @@ Examples of stacks: Uber, printer, restaurant.<br/>
 - Removing elements from queues (dequeue operation) is `O(1) ST` because we are replacing the tail.
 - Peek operations, viewing the last item is `O(1) ST`. <br />
 
+## 8. Trees
+Trees have hierarchial structures. They might have sub-trees. <br />
+**Root Node** is the first node of the tree. <br />
+**Parent Node** has **children nodes**. <br />
+**Leaf Nodes** are the latest nodes of the parent. <br />
+
+1. **Binary Tree:** Each node can have either 0, 1 or 2 nodes. Each child can have one parent. Each node represents a certain state. <br />
+   - The number of total nodes double on each level.
+   - The number of nodes in the last level equals the sum of nodes in other level + 1.
+   - Half of our nodes are on the last level.
+   - Num of nodes in level x = `2^x`.
+   - Num of nodes in a perfect tree = `2^h - 1`.
+   - `O(log N)` means the number of steps to find the required node. Searching through the phone book is also `O(log N)`.
+**Perfect Binary Trees** have their parents with 2 leaf nodes. They are all full. <br />
+**Full Binary Tree** have their parents with either 0 or 2 nodes. 
+
+2. **Binary Search Tree:** preserves relationship between nodes (like folders path).
+   - Nodes to the right increase in value. Nodes to the left decrease in value.
+   - A parent can have up to 2 children.
+   - Balanced BST allows `O (log N) ST` for lookups, insertion and deletion while unbalanced BST allows `O(N) ST`. 
+
 ## 9. Graphs
 - Each item is called Node or Vertex.
 - Nodes are connected through edges.

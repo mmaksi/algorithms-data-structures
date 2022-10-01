@@ -198,6 +198,20 @@ Trees have hierarchial structures. They might have sub-trees. <br />
    - Nodes to the right increase in value. Nodes to the left decrease in value.
    - A parent can have up to 2 children.
    - Balanced BST allows `O (log N) ST` for lookups, insertion and deletion while unbalanced BST allows `O(N) ST`. 
+   - AVL Trees and Red/Black Trees rebalance the trees automatically.
+
+3. **Binary Heaps:** Every child belongs to a parent which is higher in value (max heap) or lower in value (minimum heap). <br />
+Binary Heaps are great when doing comperative operation. Eg.: looking for people over 30 years old. <br />
+There is no concept of balanced/unbalanced Binary Heap. <br />
+Binary Heaps are good in **Priority Queues**.
+
+- Insert elements is always LTR ==> memory efficient + `O(1) T` in best case or `O(log N) T` in worst case.
+- Lookup `O(N)`.
+- Delete `O(log N)`.
+
+4. **Trie (Pre-fixed Tree):** Used in searching with texts. It can outperform other data structures in lookups. They are mainly used in auto-completion, auto-suggestion, IP routing.
+
+- The big O of a Trie is `O(length of the word) T`.
 
 ## 9. Graphs
 - Each item is called Node or Vertex.
@@ -221,3 +235,17 @@ To implement a graph there are 3 ways: <br />
 1. Edge List: shows only connections between all the nodes.
 2. Adjacent List: the `index` is the node's value. The `value` is the neighbors value.
 3. Adjacent Matrix
+
+## Algorithms - Recursion
+Recursion is a function that refers to itself inside that function. It is used when we have tasks with repeated sub-tasks to do (Eg. looking for all .mp3 files in our disk drive). <br />
+Recursion can cause Stack Overflow - reaching the maximum call stack size. <br />
+Recursion must have two things: a base case and a recursive case. <br />
+Anything that can be solved by a recursion can also be solved with loops. Recursion makes code very readable but might be expensive on memory.
+
+**When to know that a recursive problem presents itself?** <br />
+1. The problem can be divided into subproblems that are smaller instances of the same problem.
+2. Each subproblem is identical in nature.
+3. The solutions of each subproblem can be combined to solve the problem at hand.
+
+<br />
+Recursion is good in: Merge Sort, Quick Sort, Tree Traversal, Graph Traversal.

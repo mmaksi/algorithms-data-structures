@@ -253,7 +253,7 @@ To implement a graph there are 3 ways: <br />
 2. Adjacent List: the `index` is the node's value. The `value` is the neighbors value.
 3. Adjacent Matrix
 
-## Algorithms - Recursion
+## 10. Algorithms - Recursion
 
 Recursion is a function that refers to itself inside that function. It is used when we have tasks with repeated sub-tasks to do (Eg. looking for all .mp3 files in our disk drive). <br />
 Recursion can cause Stack Overflow - reaching the maximum call stack size. <br />
@@ -268,7 +268,7 @@ Anything that can be solved by a recursion can also be solved with loops. Recurs
 
 Recursion is good in: Merge Sort, Quick Sort, Tree Traversal, Graph Traversal.
 
-## Algorithms - Sorting
+## 11. Algorithms - Sorting
 
 ### A. Comparison Sorting
 
@@ -284,3 +284,6 @@ Recursion is good in: Merge Sort, Quick Sort, Tree Traversal, Graph Traversal.
 
 ### B. Non-Comparison Sorting (Radix Sort + Counting Sort):
 They are useful only with integers and with limited range.
+
+## 12. Algorithms - Dynamic Programming
+Memoization is a form of caching the return value of a function based on its parameters whether they are changed or not.

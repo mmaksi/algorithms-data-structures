@@ -53,10 +53,9 @@ function isValidSubsequence(array, sequence) {
  * @return {name of the winner team}
  */
 
+const Doubledscore = {};
+const score = {};
 function tournamentWinner(competitions, results) {
-  const NUM_OF_TEAMS = competitions.length;
-  const Doubledscore = {};
-  const score = {};
   for (let i = 0; i < competitions.length; i++) {
     const competition = competitions[i];
     Doubledscore[competition] = results[i];

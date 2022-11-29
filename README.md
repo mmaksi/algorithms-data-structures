@@ -285,5 +285,12 @@ Recursion is good in: Merge Sort, Quick Sort, Tree Traversal, Graph Traversal.
 ### B. Non-Comparison Sorting (Radix Sort + Counting Sort):
 They are useful only with integers and with limited range.
 
-## 12. Algorithms - Dynamic Programming
+## 13. Searching (BFS, DFS)
+   1. **Linear Search:** Finding a target value within a list. Best case `O(1)`. Worst case `O(n)`
+   2. **Linear Search:** Good for sorted items `O(log n)`.
+   3. **BFS:**
+   1. **DFS:**
+
+
+## 13. Algorithms - Dynamic Programming
 Memoization is a form of caching the return value of a function based on its parameters whether they are changed or not.

@@ -85,7 +85,6 @@ function mergeSortedArray(arr1, arr2) {
     }
   }
 }
-mergeSortedArray([0, 3, 4, 31, 41], [4, 6, 30]);
 
 // function twoSum(arr, target) {
 //   for (let i = 0; i < arr.length; i++) {

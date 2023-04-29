@@ -109,9 +109,17 @@ Insertion, Deletion, Traversal (one for loop), Searching (find index), Sorting, 
 - Dynamic arrays allow adding items without copying (most of the time) => `O(1)`.
 - JavaScript arrays are dynamic - they automatically allocate memory according to increase in size. They expand as you add more items. But rarely do they act like static arrays. So the `push` command can be either `O(n)` or `O(1)`.
 
-### Note
+**O(1) Operations:** <br />
+Lookup, push, pop <br />
 
-Treat strings as arrays because a string is an array of characters.
+**O(n) Operations:** <br />
+Unshift, splice <br />
+
+### Notes
+
+- Treat strings as arrays because a string is an array of characters.
+- **Pros:** fast lookup, push, and pop because they are ordered in memory.
+- **Cons:** slow inserts, slow deletes and fixed in size (static arrays)
 
 ## 5. Hash Tables
 
@@ -133,10 +141,10 @@ Hash Tables store `key-value` pairs where keys are passed to a hash function whi
 insert, lookup, delete, search <br />
 <br />
 When data is hashed there is a chance that it will be stored in the same memory space of another data, causing a collision. There are many ways to resolve a collision, one way is Linked Lists data structure.<br />
-When there is a collison occurs, the big O becomes O(n)
+When there is a collison occurs, the big O becomes `O(n)`.
 
-- In JS the keys are strengified.
-- JS `Map` allows you to store and data type as keys. It also maintains insertion order.
+- In JS the keys must be strings.
+- JS `Map` allows you to store any data type as keys. It also maintains insertion order.
 - JS `Set` store only keys.
 
 ### Arrays vs Hash Tables

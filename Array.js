@@ -24,7 +24,7 @@ class MyArray {
   delete(index) {
     const item = this.data[index];
     this.shiftItems(index);
-    return item
+    return item;
   }
 
   shiftItems(index) {
@@ -32,15 +32,66 @@ class MyArray {
       this.data[i] = this.data[i + 1];
     }
     delete this.data[this.length - 1];
-    this.length--
+    this.length--;
   }
 }
 
-function twoSum(arr, target) {
-  for (let i = 0; i < arr.length; i++) {
-    for (let j = 0; j < arr.length; j++) {
-      while (arr[i] + arr[j] === target) {}
+// Reverse a string problem
+function reverseString(text) {
+  const textArray = text.split("");
+  const reversedArray = [];
+  for (let index = textArray.length - 1; index > -1; index--) {
+    const element = textArray[index];
+    reversedArray.push(element);
+  }
+  return reversedArray;
+}
+
+function reverseString2(text) {
+  return text.split("").reverse().join("");
+}
+
+function reverseString3(str) {
+  return [...str].reverse().join("");
+}
+reverseString("text");
+
+// Merge sorted arrays problem
+function mergeSortedArray(arr1, arr2) {
+  const newArray = [];
+  // Pointer for each element in each array
+  let firstPointer = 0;
+  let secondPointer = 0;
+
+  // Loop over the two arrays using pointers to compare values
+  while (firstPointer < arr1.length || secondPointer < arr2.length) {
+    if (arr1[firstPointer] < arr2[secondPointer]) {
+      newArray.push(arr1[firstPointer]);
+      firstPointer++;
+    } else if (arr1[firstPointer] === arr2[secondPointer]) {
+      newArray.push(arr1[firstPointer]);
+      newArray.push(arr2[secondPointer]);
+      firstPointer++;
+      secondPointer++;
+    } else if (arr1[firstPointer] > arr2[secondPointer]) {
+      newArray.push(arr2[secondPointer]);
+      secondPointer++;
+    } else if (arr1[firstPointer] === undefined) {
+      newArray.push(arr2[secondPointer]);
+      secondPointer++;
+    } else if (arr2[secondPointer] === undefined) {
+      newArray.push(arr1[firstPointer]);
+      firstPointer++;
     }
   }
 }
-twoSum([2, 7, 11, 15], 9);
+mergeSortedArray([0, 3, 4, 31, 41], [4, 6, 30]);
+
+// function twoSum(arr, target) {
+//   for (let i = 0; i < arr.length; i++) {
+//     for (let j = 0; j < arr.length; j++) {
+//       while (arr[i] + arr[j] === target) {}
+//     }
+//   }
+// }
+// twoSum([2, 7, 11, 15], 9);

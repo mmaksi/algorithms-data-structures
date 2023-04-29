@@ -17,7 +17,7 @@
 1. **O(n) - Linear Time**
    As the number of inputs increases, the number of operations increases proportionally.
 
-- Looping over every element in `for` and `while` loops.
+- Looping over every element in `for` and `while` loops **for the same arry.** If we are looping over two differnet arrays, the Big O is `O(a+b)`.
   ![big-o-linear-time](https://i.ibb.co/84J8zV6/o-n-chart.png)
 
 2. **O(1) - Constant Time**
@@ -43,7 +43,7 @@
 - Worst Case
 - Remove Constants
 - Different Terms for Inputs
-- Drop Non Dominants
+- Drop Non Dominants: `O(n^2 + n) --> O(n^2)`
 
 ### Three Pillars of Programming:
 
@@ -94,19 +94,20 @@ When we talk about `Space Complexity` we talk about additional space, so we don'
 
 ### Operations on Data Structures
 
-Insertion, Deletion, Traversal, Searching, Sorting, Access,
+Insertion, Deletion, Traversal (one for loop), Searching (find index), Sorting, Access.
 
 ## 4. Arrays
 
 - Arrays store data sequentially.
-- Lookup, push, pop have `O(1)` because the computer knows where data are stored in RAM (sequentially)
+- Lookup, push, pop have `O(1)` because the computer knows where data are stored in RAM (sequentially).
 - Unshift, splice have `O(n)` because it contains iterations over its items to re-order them.
+- Arrays are not the best when we want to add elements to the beginning of the array.
 
 ### Static Arrays vs. Dynamic Arrays:
 
-- Fixed in size. If you want to expand on their size, you need to copy and rebuild an array in a new location => double memory + time complexity `O(n)`.
+- Static Arrays are fixed in size. If you want to expand on their size, you need to copy and rebuild an array in a new location => double memory + time complexity `O(n)`.
 - Dynamic arrays allow adding items without copying (most of the time) => `O(1)`.
-- JavaScript arrays are dynamicc - they automatically allocate memory according to increase in size. They expand as you add more items. But rarely do they act like static arrays. So the `push` command can be either `O(n)` or `O(1)`.
+- JavaScript arrays are dynamic - they automatically allocate memory according to increase in size. They expand as you add more items. But rarely do they act like static arrays. So the `push` command can be either `O(n)` or `O(1)`.
 
 ### Note
 
@@ -272,25 +273,27 @@ Recursion is good in: Merge Sort, Quick Sort, Tree Traversal, Graph Traversal.
 
 ### A. Comparison Sorting
 
-   1. **Bubble Sort:** don't use it `O(N^2) T`.
+1.  **Bubble Sort:** don't use it `O(N^2) T`.
 
-   2. **Selection Sort:** don't use it `O(N^2) T`.
+2.  **Selection Sort:** don't use it `O(N^2) T`.
 
-   3. **Insertion Sort:** this algorithm is good with small data sets and when data is almost sorted. Best case `O(N) T`, but in worst case it is `O(N^2) T`.
+3.  **Insertion Sort:** this algorithm is good with small data sets and when data is almost sorted. Best case `O(N) T`, but in worst case it is `O(N^2) T`.
 
-   4. **Merge Sort:** it's always `O(n log N) T` so use it in worst cases. But it's expensive on memory `O(N) S`.
+4.  **Merge Sort:** it's always `O(n log N) T` so use it in worst cases. But it's expensive on memory `O(N) S`.
 
-   5. **Quick Sort:** we use it when the average case matters more than the worst case and it's better than **Merge Sort** in space complexity.
+5.  **Quick Sort:** we use it when the average case matters more than the worst case and it's better than **Merge Sort** in space complexity.
 
 ### B. Non-Comparison Sorting (Radix Sort + Counting Sort):
+
 They are useful only with integers and with limited range.
 
 ## 13. Searching (BFS, DFS)
-   1. **Linear Search:** Finding a target value within a list. Best case `O(1)`. Worst case `O(n)`
-   2. **Linear Search:** Good for sorted items `O(log n)`.
-   3. **BFS:**
-   1. **DFS:**
 
+1.  **Linear Search:** Finding a target value within a list. Best case `O(1)`. Worst case `O(n)`
+2.  **Linear Search:** Good for sorted items `O(log n)`.
+3.  **BFS:**
+4.  **DFS:**
 
 ## 13. Algorithms - Dynamic Programming
+
 Memoization is a form of caching the return value of a function based on its parameters whether they are changed or not.

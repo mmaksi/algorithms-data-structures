@@ -153,22 +153,35 @@ class DoublyLinkedList {
     return currentNode;
   }
 
+  reverze() {
+    let head = this.head;
+    let tail = this.tail;
+    this.head = tail;
+    this.tail = head;
+
+    const values = this.printList();
+    let currentNode = traverseToIndex(values.length - 1);
+    // this.head.next =
+    // while(currentNode.value !== this.head.value) {
+
+    // }
+  }
+
   reverse() {
     let index = 0;
     const values = this.printList();
-    const prevHead = this.head
-    this.head = prevHead
-    const prevTail = this.tail
-    
-    while(index < values.length-1) {
-      let node = this.traverseToIndex(index)
-      this.head.next = node
-      index++
+    const prevHead = this.head;
+    this.head = prevHead;
+    const prevTail = this.tail;
+
+    while (index < values.length - 1) {
+      let node = this.traverseToIndex(index);
+      this.head.next = node;
+      index++;
     }
 
-    return this.printList()
-  } 
-  
+    return this.printList();
+  }
 }
 
 const myLinkedList = new DoublyLinkedList(5);

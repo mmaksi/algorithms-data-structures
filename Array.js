@@ -85,12 +85,3 @@ function mergeSortedArray(arr1, arr2) {
     }
   }
 }
-
-// function twoSum(arr, target) {
-//   for (let i = 0; i < arr.length; i++) {
-//     for (let j = 0; j < arr.length; j++) {
-//       while (arr[i] + arr[j] === target) {}
-//     }
-//   }
-// }
-// twoSum([2, 7, 11, 15], 9);

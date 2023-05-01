@@ -170,13 +170,26 @@ Lookup, push `O(1)` because we know where the index is in memory.
   ![linked-lists](https://i.ibb.co/CMN2cHg/linked-lists-big-o.png)
 - Traversing is iterating over an iterable but we use that term because we don't know when we will hit `null`.
 - Traversing over a Linked List is slower than iterating an array because Array elements are stored sequentially in memory while in Linked Lists they are scattered even though both operations are `O(n)`.
-- Inserting and deleting in Linked Lists and Hash Tables are better than in Arrays.
+- Inserting and deleting in Linked Lists and Hash Tables are better than in Arrays **even if they both have `O(n)`**.
 - Linked Lists have order while Hash Tables don't.
+
+**O(1) Operations:** <br />
+prepend, append <br />
+<br />
+
+**O(n) Operations (worst case):** <br />
+insert, lookup, delete <br />
+<br />
 
 ### What is a Pointer?
 
 A pointer is a reference in another place in memory. <br/>
 Objects in JS are pointers to a memory space. Once we delete the object using the `delete` keyword, JS will automatically remove the memory that was allocated to that object. That's why it's called a _garbage collecting language_.
+
+### Singly vs. Doubly Linked Lists
+
+Singly: simpler to implement, faster, cannot be iterated backwards.
+Doubly: more complex, can be traversed from front and back, requires more memory.
 
 ## 7. Stacks and Queues
 
@@ -194,10 +207,12 @@ Examples of stacks: Uber, printer, restaurant.<br/>
 - Removing elements from Stacks (pop operations) is `O(1) ST`.
 - Peek operations, viewing the last item is `O(1) ST`. <br />
 
-- Queues are represented as linked lists.
-- Inserting elements in queues (enqueue operation) is `O(1) ST` because we are replacing the head.
-- Removing elements from queues (dequeue operation) is `O(1) ST` because we are replacing the tail.
+- Queues are represented as linked lists because dequeueing from a list is O(n).
+- Inserting elements in queues (enqueue operation) is `O(1) ST` because we are replacing the tail.
+- Removing elements from queues (dequeue operation) is `O(1) ST` because we are removing th head.
 - Peek operations, viewing the last item is `O(1) ST`. <br />
+
+- Stacks and Queues have slow look-ups.
 
 ## 8. Trees
 

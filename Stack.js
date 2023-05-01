@@ -65,3 +65,9 @@ class ArrayStack {
     return false;
   }
 }
+
+const st = new Stack();
+st.push(1);
+st.push(2);
+st.push(3);
+st.peek();

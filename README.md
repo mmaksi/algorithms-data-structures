@@ -123,8 +123,6 @@ Unshift, splice <br />
 
 ## 5. Hash Tables
 
-### Hash Tables Introduction
-
 Hash Tables store `key-value` pairs where keys are passed to a hash function which in turn decides where in memory to store this pair based on its output.
 
 ### Hash Function
@@ -216,6 +214,8 @@ Examples of stacks: Uber, printer, restaurant.<br/>
 
 ## 8. Trees
 
+![Trees](https://i.ibb.co/g7nWvrt/trees.png)
+
 Trees have hierarchial structures. They might have sub-trees. <br />
 **Root Node** is the first node of the tree. <br />
 **Parent Node** has **children nodes**. <br />
@@ -224,25 +224,25 @@ Trees have hierarchial structures. They might have sub-trees. <br />
 1. **Binary Tree:** Each node can have either 0, 1 or 2 nodes. Each child can have one parent. Each node represents a certain state. <br />
 
    - The number of total nodes double on each level.
-   - The number of nodes in the last level equals the sum of nodes in other level + 1.
+   - The number of nodes in the last level equals the sum of nodes in other levels + 1.
    - Half of our nodes are on the last level.
-   - Num of nodes in level x = `2^x`.
+   - Num of nodes in level x = `2^x` where `x` represents the level.
    - Num of nodes in a perfect tree = `2^h - 1`.
-   - `O(log N)` means the number of steps to find the required node. Searching through the phone book is also `O(log N)`.
-     **Perfect Binary Trees** have their parents with 2 leaf nodes. They are all full. <br />
-     **Full Binary Tree** have their parents with either 0 or 2 nodes.
+   - In binary trees, lookup, insert, delete all have `O(log N)` operations which means the number of steps to find the required node decreases with every step. Searching through the phone book is also `O(log N)`.
+     **Perfect Binary Trees** leaves have their parents with 2 leaf nodes. They are all full. <br />
+     **Full Binary Tree** have their parents with either 0 or 2 nodes but never one.
 
-2. **Binary Search Tree:** preserves relationship between nodes (like folders path).
+2. **Binary Search Tree (BST):** preserves relationship between nodes (like folders path).
 
    - Nodes to the right increase in value. Nodes to the left decrease in value.
    - A parent can have up to 2 children.
-   - Balanced BST allows `O (log N) ST` for lookups, insertion and deletion while unbalanced BST allows `O(N) ST`.
+   - Balanced BST allows `O (log N) ST` for lookups, insertion and deletion while unbalanced BST allows `O(N) ST` because they turn into linked lists.
    - AVL Trees and Red/Black Trees rebalance the trees automatically.
 
 3. **Binary Heaps:** Every child belongs to a parent which is higher in value (max heap) or lower in value (minimum heap). <br />
    Binary Heaps are great when doing comperative operation. Eg.: looking for people over 30 years old. <br />
    There is no concept of balanced/unbalanced Binary Heap. <br />
-   Binary Heaps are good in **Priority Queues**.
+   Binary Heaps are good in **Priority Queues** e.g: VIP tickets have higher priority than normal tickets.
 
 - Insert elements is always LTR ==> memory efficient + `O(1) T` in best case or `O(log N) T` in worst case.
 - Lookup `O(N)`.

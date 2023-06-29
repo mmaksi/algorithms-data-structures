@@ -281,7 +281,7 @@ To implement a graph there are 3 ways: <br />
 
 Recursion is a function that refers to itself inside that function. It is used when we have tasks with repeated sub-tasks to do (Eg. looking for all .mp3 files in our disk drive). <br />
 Recursion can cause Stack Overflow - reaching the maximum call stack size. <br />
-Recursion must have two things: a base case and a recursive case. <br />
+Recursion must have two things: a base case and a recursive case. Usually we have 2 returns for the base case and the recursive case. <br />
 Anything that can be solved by a recursion can also be solved with loops. Recursion makes code very readable but might be expensive on memory.
 
 **When to know that a recursive problem presents itself?** <br />
